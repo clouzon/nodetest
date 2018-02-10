@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  
+  div
+   form(action='/search',method='get')
+     div(data-role='fieldcontain')
+       fieldset(data-role='controlgroup')
+         label(for='food') food
+         input(id='food',type='text',value='',placeholder='apple' name='food')
